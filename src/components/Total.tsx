@@ -1,10 +1,10 @@
 import React from "react";
-import {coursePart, courseParts} from '../../types';
+import {CoursePart, CourseParts} from '../types';
 
-const Total: React.FC<courseParts> = ({courses}) => {
+const Total: React.FC<CourseParts> = ({courses}) => {
 	return (
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		<p>Number of exercises {courses.reduce((carry: any, part: coursePart) => carry + part.exerciseCount, 0)}
+		<p>Number of exercises {courses.reduce((carry: any, part: CoursePart) => carry + part.exerciseCount, 0)}
 		</p>
 	)
 }
